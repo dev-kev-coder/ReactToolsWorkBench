@@ -1,0 +1,38 @@
+.visually-hidden {
+  /* position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px); */
+  /* opacity: 0; */
+  visibility: hidden;
+}
+
+input.visually-hidden:is(:focus, :focus-within) + label {
+  outline: thin dotted;
+}
+
+.generic-upload {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #dddddd;
+  padding: 40px;
+  text-align: center;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  border-radius: 5px;
+  background-color: #ffffff;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #666666;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.generic-upload:hover {
+  border-color: #bbbbbb;
+}
+
+.generic-dragover {
+  border-color: #007bff;
+  background-color: #f0f8ff;
+  color: #007bff;
+}
