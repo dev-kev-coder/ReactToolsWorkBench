@@ -5,7 +5,8 @@
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px); */
   /* opacity: 0; */
-  visibility: hidden;
+  /* visibility: hidden; */
+  display: none;
 }
 
 input.visually-hidden:is(:focus, :focus-within) + label {
